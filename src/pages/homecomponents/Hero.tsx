@@ -27,7 +27,7 @@ function Hero() {
                   <span className=" text-green-700"> journey</span>
                 </h1>
                 <p className=" text-[#1A1A1A] font-[300] sm:text-[20px] text-[16px]  sm:w-full w-[300px]">
-                Learn Forex trading from seasoned experts with step-by-step guidance, real-world strategies, and tools to trade with confidence.
+                Learn Forex trading from seasoned experts with step-by-step guidance, real-world strategies and tools to trade with confidence.
                 </p>
               </div>
               <div className=" flex items-center justify-center gap-[24px]  py-10 w-fit">
