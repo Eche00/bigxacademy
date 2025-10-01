@@ -8,7 +8,7 @@ function Header() {
   const [dropDown,setDropDown] = useState(false)
 
   return (
-    <div className="  fixed top-0 left-0 w-full z-50 py-5" >
+    <div className="  fixed top-0 left-0 w-full z-50 py-5 bg-gradient-to-b from-white to-transparent" >
       <section className="flex items-center justify-between max-w-[90%] md:max-w-[85%] mx-auto bg-white py-[10px] relative border-2 border-green-500 shadow-xl rounded-full px-10">
         {/* logo  */}
          <div className="flex flex-1 items-baseline justify-center sm:justify-start gap-2 w-full text-center">
