@@ -8,10 +8,14 @@ function Home() {
   return (
        <div>
         <Hero/>
+        <section className="bg-green-700/10 mt-10">
         <About/>
+        </section>
+        <section className="flex flex-col sm:w-[85%] w-[90%] mx-auto">
         <Services/>
         <Reviews/>
         <Contact/>
+        </section>
        </div>
       
   )
