@@ -29,7 +29,7 @@ function Footer() {
                   Email
                 </p>
                 <p className="font-[400] text-[16px] text-[#040505]">
-                  info@ziontechub.com
+                  support@xacademy.com
                 </p>
               </section>
               {/* Phone Section */}
@@ -38,7 +38,7 @@ function Footer() {
                   Phone Number
                 </p>
                 <p className="font-[400] text-[16px] text-[#040505]">
-                  +234 805 509 4738
+                +1 234 567 890
                 </p>
               </section>
             </div>
@@ -47,7 +47,8 @@ function Footer() {
           {/* Right Column: CTA Buttons */}
           <div className="flex flex-col gap-8">
             <h3 className="font-[600] text-24px] text-[#040505]">
-              Start your training with <br /> Zion Tech Hub
+              Join us at the <br /> ßIG𝕏.Academy
+
             </h3>
             <div className="flex-1 flex sm:flex-row flex-col items-start justify-between gap-[30px]">
             <ul className="flex flex-col ">
