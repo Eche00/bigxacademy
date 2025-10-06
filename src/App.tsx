@@ -5,6 +5,7 @@ import Mentorship from "./pages/Mentorship"
 import Signals from "./pages/Signals"
 import Courses from "./pages/Courses"
 import { Calculate } from "@mui/icons-material"
+import ScrollToTop from "./components/ScrollToTop";
 
 
 
@@ -12,9 +13,9 @@ function App() {
     
   return (
     <div className="   relative w-full overflow-x-hidden" >
-      
-      
       <BrowserRouter>
+      <ScrollToTop/>
+
         <Routes>
               {/* General Routes */}
              <Route element={<Container/>}>
