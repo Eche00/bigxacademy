@@ -1,6 +1,4 @@
 import {
-  ArrowForward,
-  Check,
   Instagram,
   Telegram,
 } from "@mui/icons-material"; // Material UI icons
