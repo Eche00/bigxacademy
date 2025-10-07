@@ -60,7 +60,7 @@ const packages = [
 
 function Packages() {
   return (
-    <div className="py-12 px-6 md:px-16 bg-gray-50">
+    <div className="py-12 px-6 md:px-16">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
         Our Mentorship Packages
       </h2>

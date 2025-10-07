@@ -6,7 +6,7 @@ function Mentorship() {
   return (
     <div>
        <Hero/>
-        <section className="bg-green-700/10 mt-10">
+        <section className="bg-green-700/10 mt-10" id="packages">
           <Packages/>
         </section>
 

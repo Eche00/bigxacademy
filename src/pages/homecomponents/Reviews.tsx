@@ -2,7 +2,7 @@ import { Circle } from "@mui/icons-material"
 
 function Reviews() {
   return (
-    <div className="sm:w-[85%] w-[90%] mx-auto py-[100px] min-h-[100vh] flex flex-col"> 
+    <div className="sm:w-[85%] w-[90%] mx-auto py-[100px] min-h-[100vh] flex flex-col "> 
     <section className="flex items-center justify-between mb-[50px] h-fit">
     <div className=" flex  items-center border-[1px] border-green-700 rounded-full w-fit ">
             <p className=" text-[14px]  font-[400] py-[8px] px-[20px]  ">

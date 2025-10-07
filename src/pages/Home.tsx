@@ -13,9 +13,15 @@ function Home() {
         </section>
         <section className="flex flex-col sm:w-[85%] w-[90%] mx-auto">
         <Services/>
+        </section>
+        <section className="bg-gray-100 mb-10">
         <Reviews/>
+        </section>
+        <section className="flex flex-col sm:w-[85%] w-[90%] mx-auto">
         <Contact/>
         </section>
+
+         
        </div>
       
   )
