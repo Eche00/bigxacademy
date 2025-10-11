@@ -4,8 +4,8 @@ import Home from "./pages/Home"
 import Mentorship from "./pages/Mentorship"
 import Signals from "./pages/Signals"
 import Courses from "./pages/Courses"
-import { Calculate } from "@mui/icons-material"
 import ScrollToTop from "./components/ScrollToTop";
+import Calculator from "./pages/Calculator"
 
 
 
@@ -23,7 +23,7 @@ function App() {
                    <Route path="/mentorship" element={<Mentorship/>}/>
                    <Route path="/signals" element={<Signals/>}/>
                    <Route path="/courses" element={<Courses/>}/>
-                   <Route path="/calculator" element={<Calculate/>}/>
+                   <Route path="/calculator" element={<Calculator/>}/>
              </Route>
         </Routes>
       </BrowserRouter>
