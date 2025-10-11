@@ -36,7 +36,7 @@ function Header() {
        </section>
 
        {dropDown &&    
-       <GeneralNav />}
+       <GeneralNav setDropDown={setDropDown} />}
     </div>
   )
 }

@@ -1,18 +1,18 @@
-import { useState } from 'react'
 import { Link, NavLink } from 'react-router'
 
 
+interface DropdownProp{
+  setDropDown: (value:boolean)=>void
+}
 
-
-function GeneralNav() {
-const [dropDown,setDropDown] = useState(false)
+function GeneralNav({setDropDown}: DropdownProp) {
   return (
-    <div>
+    <div onClick={()=>setDropDown(false)}>
       <section 
       
        className="fixed bg-white top-[90px] left-0 w-full h-[100vh]  z-50 flex flex-col gap-[32px] md:hidden">
           <div className="flex flex-col  text-white text-[16px] font-[500]" 
-          onClick={()=>setDropDown(!dropDown)}
+          
           >
           <NavLink to='/' className={({isActive})=> isActive ? 'text-green-700 font-bold text-sm cursor-pointer p-[10px]  border-b border-gray-500': ' text-gray-600 font-bold text-sm cursor-pointer p-[10px]  border-b border-green-700'}>Home</NavLink>
           <NavLink to='/mentorship' className={({isActive})=> isActive ? 'text-green-700 font-bold text-sm cursor-pointer p-[10px]  border-b border-green-700': ' text-gray-600 font-bold text-sm cursor-pointer p-[10px]  border-b border-green-700'}>Mentorship</NavLink>

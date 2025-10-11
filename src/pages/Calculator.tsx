@@ -117,17 +117,18 @@ export default function RiskCalculator() {
 
         {/* Buttons */}
         <div className="flex items-center gap-4 mt-8">
-          <button
-            onClick={handleCalculate}
-            className="flex-1 bg-green-700 hover:bg-green-600 text-white py-3 rounded-lg font-medium transition"
-          >
-            Calculate
-          </button>
+
           <button
             onClick={handleClear}
             className="flex-1 bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-medium transition"
           >
             Clear
+          </button>
+          <button
+            onClick={handleCalculate}
+            className="flex-1 bg-green-700 hover:bg-green-600 text-white py-3 rounded-lg font-medium transition"
+          >
+            Calculate
           </button>
         </div>
 
