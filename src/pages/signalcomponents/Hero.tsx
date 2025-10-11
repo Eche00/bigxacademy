@@ -1,5 +1,6 @@
 import { ArrowForward } from "@mui/icons-material"
 import { Link } from "react-router"
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -10,9 +11,12 @@ function Hero() {
             
             className="  max-w-[90%] mx-auto flex sm:flex-row md:flex-row flex-col justify-center sm:mb-[100px] mb-[125px] items-center gap-8 pt-[100px]">
             {/* hero left section  */}
-            <div
+            <motion.div
               className=" flex-1 gap-[200px]"
-             >
+              initial={{ x: -200, opacity: 0 }}
+              whileInView={{ x: 1, opacity: 1 }}
+              transition={{ duration: 1.5, delay: 0.3 }}  
+              viewport={{once:true}}>
               <div className=" flex  flex-col gap-[24px]">
               <div className=" flex items-center border-[1px] border-green-700 rounded-full w-fit p-2">
                 <p  className=" text-[14px]  font-[400] py-[10px] px-[20px] bg-green-700 text-white rounded-full hover:scale-[102%] transition-all duration-300 cursor-pointer">
@@ -43,11 +47,15 @@ function Hero() {
                
               </div>
                
-            </div>
+            </motion.div>
             {/* hero right section  */}
-            <div className=" flex-1 flex items-end  relative sm:pt-[50px] z-10">
+            <motion.div className=" flex-1 flex items-end  relative sm:pt-[50px] z-10"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.3 }}  
+            viewport={{once:true}}>
                <img src="/signalshero.webp" alt="hero-img" className="w-full rounded-[18px]" />
-            </div>
+            </motion.div>
           </div>
     </section>
    </div>

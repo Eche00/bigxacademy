@@ -1,5 +1,6 @@
 import { Circle, ListAlt, People, Person, RateReview } from "@mui/icons-material"
 import { Link } from "react-router"
+import { motion } from "framer-motion";
 
 function About() {
   return (
@@ -15,7 +16,10 @@ function About() {
 
        <main className="flex md:flex-row flex-col-reverse items-stretch md:gap-20 gap-10">
         {/* about us  */}
-        <section className="flex flex-1 flex-col justify-between ">
+        <motion.section initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 1, opacity: 1 }}
+          transition={{ duration: 1.5, delay: 0.3 }}  viewport={{once:true}}
+           className="flex flex-1 flex-col justify-between ">
         <div className=" flex flex-col text-start gap-[24px]">
                
                 <h1 className=" text-[#1A1A1A] font-[700] sm:text-[34px] text-[22px]   smm:w-full w-[80%] smm:leading-[130%] smm:tracker-[1.28px] leading-[120%] tracker-[0.8px]">
@@ -34,7 +38,7 @@ function About() {
                  Mentorship 
                 </Link>
                 </div>
-        </section>
+        </motion.section>
 
 
 
@@ -42,40 +46,52 @@ function About() {
    <div className="flex-1 mx-auto px-4 grid grid-cols-2  gap-6">
     
     {/*  Card 1  */}
-    <div className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
+    <motion.div initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 1, opacity: 1 }}
+          transition={{ duration: 1.5, delay: 0 }}  viewport={{once:true}}
+           className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
     <span className="text-green-700 pb-2"><Person fontSize="large"/></span>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         200<span className="text-green-700 ">+</span>
       </h2>
       <p className="mt-2 text-gray-500 text-sm">Students Trained</p>
-    </div>
+    </motion.div>
     
     {/*  Card 2  */}
-    <div className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
+    <motion.div initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 1, opacity: 1 }}
+          transition={{ duration: 1.5, delay: 0.35 }}  viewport={{once:true}}
+           className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
     <span className="text-green-700 pb-2"><RateReview fontSize="large"/></span>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         95<span className="text-green-700 ">%</span>
       </h2>
       <p className="mt-2 text-gray-500 text-sm">Student Success Rate</p>
-    </div>
+    </motion.div>
     
     
-    <div className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
+    <motion.div initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 1, opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1 }}  viewport={{once:true}}
+           className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
     <span className="text-green-700 pb-2"><ListAlt fontSize="large"/></span>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         500<span className="text-green-700 ">+</span>
       </h2>
       <p className="mt-2 text-gray-500 text-sm">Trading Resources Shagreen</p>
-    </div>
+    </motion.div>
     
     {/*  Card 4  */}
-    <div className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
+    <motion.div initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 1, opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1.35 }}  viewport={{once:true}}
+           className="bg-white rounded-2xl shadow-sm p-6 text-center md:h-[200px] flex flex-col items-center justify-center">
     <span className="text-green-700 pb-2"><People fontSize="large"/></span>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         1000<span className="text-green-700 ">+</span>
       </h2>
       <p className="mt-2 text-gray-500 text-sm">Community Members</p>
-    </div>
+    </motion.div>
 
    </div>
 

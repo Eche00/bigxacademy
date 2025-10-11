@@ -1,5 +1,6 @@
 import { ArrowForward } from "@mui/icons-material"
 import { Link } from "react-router"
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -10,8 +11,14 @@ function Hero() {
             
             className="  max-w-[90%] mx-auto flex  flex-col justify-center mb-[100px]  items-center ">
             {/* hero left section  */}
-            <div
+            <motion.div
+           
               className=" flex items-center justify-center flex-col flex-1 gap-5  pt-[120px]"
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1.5, delay: 0.3 }}  
+              viewport={{once:true}}
+              
              >
               <div className=" flex flex-col items-center justify-center text-center gap-[24px]">
                <div className=" flex items-center border-[1px] border-green-700 rounded-full w-fit p-2">
@@ -44,10 +51,11 @@ function Hero() {
                 </Link>
                
               </div>
-            </div>
+            </motion.div>
             {/* hero right section  */}
             <div className=" flex-1 flex items-end  relative z-10">
-               <img src="/hero1.webp" alt="hero-img" className="md:w-[900px] w-full md:h-[500px] object-cover rounded-[18px] [mask-image:linear-gradient(to_bottom,black_1,transparent)] 
+               <motion.img initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale:1,opacity: 1 }}
+              transition={{ duration: 1}} viewport={{once:true}} src="/hero1.webp" alt="hero-img" className="md:w-[900px] w-full md:h-[500px] object-cover rounded-[18px] [mask-image:linear-gradient(to_bottom,black_1,transparent)] 
               [mask-repeat:no-repeat] [mask-size:100%]" />
                  {/*  Cloud blobs */}
   
