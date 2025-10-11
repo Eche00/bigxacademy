@@ -1,4 +1,5 @@
 import { CheckCircle } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 const packages = [
   {
@@ -65,7 +66,11 @@ function Packages() {
         Our Mentorship Packages
       </h2>
 
-      <div className="flex flex-wrap items-center justify-center gap-8 ">
+      <motion.div className="flex flex-wrap items-center justify-center gap-8 "
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 1, opacity: 1 }}
+      transition={{ duration: 1.5, delay: 0.3 }}  
+      viewport={{once:true}}>
         {packages.map((pkg, index) => (
           <div
             key={index}
@@ -95,7 +100,7 @@ function Packages() {
           </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

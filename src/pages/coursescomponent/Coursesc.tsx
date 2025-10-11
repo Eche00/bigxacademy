@@ -1,4 +1,5 @@
 import { CheckCircle } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 const courses = [
   {
@@ -79,7 +80,11 @@ function Coursesc() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
   {courses.map((course, index) => (
-    <div
+    <motion.div
+    initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 1, opacity: 1 }}
+      transition={{ duration: 1.5, delay: 0.3 }}  
+      viewport={{once:true}}
       key={index}
       className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-500 border border-gray-100"
     >
@@ -122,7 +127,7 @@ function Coursesc() {
           Enroll Now
         </button>
       </div>
-    </div>
+    </motion.div>
   ))}
 </div>
 
