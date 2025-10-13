@@ -37,16 +37,16 @@ function Hero() {
                 Learn Forex trading from seasoned experts with step-by-step guidance, real-world strategies and tools to trade with confidence.
                 </p>
               </div>
-              <div className=" flex items-center justify-center gap-[24px]  py-10 w-fit">
+              <div className=" flex items-center justify-center sm:gap-[24px] gap-4  py-10 w-fit">
                 <Link
                  to='/mentorship'
-                  className="flex items-center justify-center gap-[10px] rounded-full bg-green-700 text-white sm:py-[10px] py-[12px]  sm:w-[200px] w-[170px] text-[16px] sm:text-[18px] font-[400] cursor-pointer hover:scale-105 transition-all duration-300">
+                  className="flex items-center justify-center gap-[10px] rounded-full bg-green-700 text-white sm:py-[10px] py-[12px]  sm:w-[200px] w-[150px] text-[16px] sm:text-[18px] font-[400] cursor-pointer hover:scale-105 transition-all duration-300">
                  Mentorship <ArrowForward/>
                 </Link>
                
                 <Link
                   to="/courses"
-                  className=" sm:py-[10px] py-[12px] sm:w-[200px] w-[170px] text-[16px] text-green-700 sm:text-[18px] border-[1px] border-green-700  rounded-full flex items-center justify-center font-[400] cursor-pointer hover:scale-105 transition-all duration-300">
+                  className=" sm:py-[10px] py-[12px] sm:w-[200px] w-[150px] text-[16px] text-green-700 sm:text-[18px] border-[1px] border-green-700  rounded-full flex items-center justify-center font-[400] cursor-pointer hover:scale-105 transition-all duration-300">
                   Courses
                 </Link>
                
