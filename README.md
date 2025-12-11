@@ -1,30 +1,34 @@
-BigXAcademy 💹
+# BigXAcademy 💹
 
 BigXAcademy is a modern, intuitive platform that offers Forex trading courses, mentorship programs, and an FX calculator. Built with React and Tailwind CSS, it’s fast, responsive, and easy to use, providing users with the tools and guidance to improve their trading skills and make informed decisions.
+
 ----
-Features
 
-Comprehensive Forex trading courses for beginners and advanced traders
+##Features
 
-Mentorship program to guide students through practical trading strategies
+- Comprehensive Forex trading courses for beginners and advanced traders
 
-Built-in FX Calculator for real-time currency conversion and profit estimation
+- Mentorship program to guide students through practical trading strategies
 
-Responsive UI with gradients, smooth shadows, and modern layouts
+- Built-in FX Calculator for real-time currency conversion and profit estimation
 
-Light and Dark Mode for comfortable learning anytime
+- Responsive UI with gradients, smooth shadows, and modern layouts
 
-Optimized for both desktop and mobile devices
+- Light and Dark Mode for comfortable learning anytime
+
+- Optimized for both desktop and mobile devices
+
 ----
-Tech Stack
 
-Frontend: React
+##Tech Stack
 
-Styling: Tailwind CSS
+- *Frontend:* React
 
-Build Tool: Vite
+- *Styling:* Tailwind CSS
 
-Data: Local Storage / JSON-based course management
+- *Build Tool:* Vite
+
+- *Data:* Local Storage / JSON-based course management
 
 ----
 
